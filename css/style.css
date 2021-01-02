@@ -1,0 +1,96 @@
+/* Custom Styleet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+
+
+
+p {
+  line-height: 2rem;
+}
+.MainTitle1{
+text-align: center;
+ font-family:Impact;
+  font-size:80px;
+  color:#D5CF17;
+  text-shadow: 3px  0px 0px #051C7C,
+               0px  3px 0px #051C7C,
+              -3px  0px 0px #051C7C,
+               0px -3px 0px #051C7C;
+
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container h2{
+  min-height: 390px; 
+  line-height: 0; 
+ height: auto;
+  font-family: impact;
+  color: red;
+
+  text-shadow: 3px  0px 0px black,
+               0px  3px 0px black,
+              -3px  0px 0px black,
+               0px -3px 0px black;
+
+}
+
+.parallax-container p{
+  min-height: 10px; 
+  line-height: 0; 
+  height: auto;
+  font-size:"4";
+  font-family: impact;
+  color: black ;
+  -webkit-text-stroke: 0.2px #EEDD0C;
+  
+
+  
+}
+
+  .parallax-container .section {
+    width: 100%;
+
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+
+}
+

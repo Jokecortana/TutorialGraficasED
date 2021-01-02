@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8">
+  <title>Gráficas</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <img id="logo-container" src="img/logo.jpg" width="65" height="63" href="#"  class="brand-logo"></img>
+      <img id="logo-container" src="img/logo2.png" width="63" height="63" href="#" style="margin: 0px -70px 10px" class="brand-logo"></img>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Estructuras discretas</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu del tutorial</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="MainTitle1">Manipulación de las gráficas</h1>
+        <div class="row center">
+          
+        </div>
+        <div class="row center">
+          <a href="index.html" id="download-button" class="btn-large waves-effect waves-light teal lime darken-4"><b style="font-size: 30px">Inicio</b></a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+      <!--Section contact-->
+    <div class="container ">
+    <div class="section">
+
+      <div class="row">
+        <div class="col 13 s12 center">
+
+
+
+
+
+   <div class="row">
+          <div class="col s12"><h3>Gráficas Eulerianas</h3></div>
+          <div class="col s12"></div>
+          <div class="col s6"><p style="text-align: justify; font-size: 120%; margin-top:80px">La gráfica mostrada en la Figura de la derecha es Euleriana, pues (v1, v2, v3, v5, v4, v2, v5, v6, v1) es un paseo Euleriano. Dicho de otra manera, podemos dibujar a la gráfica sin levantar el lápiz del papel y sin trazar dos veces la misma línea, esto se puede enunciar mejor a través del siguiente teorema.
+          Teorema: una gráfica (o multigráfica) G es Euleriana si y sólo si G es conexa y todo vértice de G tiene grado par.
+          </p>
+
+          <p style="text-align: justify; font-size: 120%; margin-top:150px">En la ciudad de Königbserg (hoy llamada Kalingrado) pasa el río Pregel, el cual rodea dos
+          islas (A y D) comunicadas entre sí mediante un puente. Cada ribera (B y C) se conecta con A a
+          través de dos puentes, y con D por medio de uno (figura de la derecha). El problema que se planteaban
+          los habitantes de la ciudad consistía en encontrar un paseo que comience y termine en una de
+          las dos riberas, durante el cual se utilicen los siete puentes y no se pase dos veces por ninguno
+          de ellos.
+          </p> 
+          <ul style="text-align: left; font-size: 120%"></ul></div></p>
+          <div class="col s6"><img style="margin-top: 30px" src="img/gf8.png"><p>Esta gráfica también es conocida como "la firma del diablo"</p> <img style="margin-top: 60px" src="img/gf12.png"><ul>Euler en 1736 publicó la respuesta a esta pregunta.</ul></div>
+
+        </div>
+
+
+ <div class="row">
+          <div class="col s12"><h3>Flujo en redes</h3></div>
+          <div class="col s12"></div>
+          <div class="col s6"><ul style="text-align: justify; font-size: 120%; margin-top:110px">Una red se entiende como un grafo dirigido, a cuyos arcos se les asigna un flujo y una capacidad. El concepto de red aparece naturalmente en el modelamiento de problemas reales en ingeniería y otras áreas afines. Podemos, por ejemplo, pensar en el sistema de distribución de gas por cañerías en una ciudad. Aquí, cada casa de la ciudad puede representarse como un vértice i ∈ V de un grafo G =(V, A), cuyos arcos, a ∈ A, representan el sistema de cañerías que existe entre las casas para transportar el gas. El flujo f ij representaría la cantidad de gas que está pasando por la cañería que une las casas i y j, cuya capacidad c ij viene dada por el grosor de la cañería.</ul>
+          <ul style="text-align: left; font-size: 120%"></ul></div></p>
+          <div class="col s6"><img style="margin-top: 80px" src="img/gf13.png" width="350" height="250"><p style="margin-left: 60px">Transporte de gas en una ciudad, los flujos f [ij] se presentan en negro y las capacidades c [ij] en púrpura</p></div>
+
+
+ <div class="row">
+          <div class="col s12"><h3>Redes en Informática</h3></div>
+          <div class="col s12"></div>
+          <div class="col s6"><ul style="text-align: justify; font-size: 120%; margin-top:110px">En el siguiente ejemplo se pude observar una red local que existe entre los equipos de cómputo marcados como (0, 1, 2, 3, 4). Su representación (la gráfica de la derecha) nos puede ayudar a entender como están conectados los equipos entre sí y cuanta carga de trabajo recibe cada uno, esta misma representación es un grafo dirigido. Mediante un grafo se consigue establecer qué máquina se conecta con cual, por ejemplo, 1 → 2 significa que la “computadora 1” envía información a la “computadora 2”.
+</ul>
+          <ul style="text-align: justify; font-size: 120%; margin-top:20px">El grafo anterior tendría una matriz de adyacencia de la siguiente manera: <img width="150" height="280" src="img/gf15.png"></ul>
+
+          <ul style="text-align: justify; font-size: 120%; margin-top:40px">Para determinar cuál es la computadora que más conexiones tiene en la red, se suman las filas de la matriz
+          de adyacencia, con esto se puede conocer a cuántas máquinas envía información cada equipo. En este
+          caso obtenemos:
+<li style="text-align: justify; font-size: 100%; margin-top:20px" >“Computadora 0” envía a 3 máquinas.</li>
+<li style="text-align: justify; font-size: 100%" >“Computadora 1” envía a 1 máquina.</li>
+<li style="text-align: justify; font-size: 100%">“Computadora 2” envía a 2 máquinas.</li>
+<li style="text-align: justify; font-size: 100%">“Computadora 3” envía a 3 máquinas.</li>
+<li style="text-align: justify; font-size: 100%; margin-bottom:20px">“Computadora 4” envía a 2 máquinas.</li>
+Tanto la “Computadora 0” como la “Computadora 3” envían datos a 3 máquinas, es decir, son los equipos
+que mayor información comparten en la red y por consiguiente tienen una mayor carga de trabajo, son
+las computadoras a las que el encargado de laboratorio les brindará mayor cuidado pues una falla en ellas
+generaría problemas importantes en la red.</ul>
+          <ul style="text-align: left; font-size: 120%"></ul></div></p>
+
+          <div class="col s6"><img width="650" height="500" style="margin: 380px 30px" src="img/gf14.png"></div>
+
+
+
+ 
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <footer class="page-footer lime darken-4">
+    <div style="margin: -50px -50px 0px"><img src="img/borde.png" width="2050" height=60" alt="borde" ></div>
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Universidad Nacional Autónoma de México</h5>
+          <ul class="grey-text text-lighten-4">
+           <li>Alumno: Martínez Pérez Dylan Magdiel</li>
+            <li>Profesor: Ing. Zaldívar Zamorategui Orlando</li>
+            <li>Materia: Estructuras discretas</li>
+            <li>Grupo: 06</li>
+        </ul>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <div><a href="https://www.ingenieria.unam.mx/"><img src="img/logo.png" style="margin: 15px 0px" width="120" height="150" alt="FI"></a></div>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <div><a href="https://www.unam.mx/"><img src="img/logo2.png" style="margin: 15px 0px" width="120" height="150" alt="UNAM" ></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+     
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+            <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems);
+  });</script>
+
+
+
+
+
+
+  </body>
+</html>
+
+

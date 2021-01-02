@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8">
+  <title>Gráficas</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <img id="logo-container" src="img/logo.jpg" width="65" height="63" href="#"  class="brand-logo"></img>
+      <img id="logo-container" src="img/logo2.png" width="63" height="63" href="#" style="margin: 0px -70px 10px" class="brand-logo"></img>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Estructuras discretas</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">Menu del tutorial</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="MainTitle1">Propiedades de las gráficas</h1>
+        <div class="row center">
+          
+        </div>
+        <div class="row center">
+          <a href="index.html" id="download-button" class="btn-large waves-effect waves-light teal lime darken-4"><b style="font-size: 30px">Inicio</b></a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+      <!--Section contact-->
+    <div class="container ">
+    <div class="section">
+
+      <div class="row">
+        <div class="col 13 s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h1><b>Clasificación de gráficas y sus propiedades</b></h1>
+          <p class="center-align light">
+          <div class="row">
+          <div class="col s12"><h3>Gráficas</h3></div>
+          <div class="col s12"></div>
+          <div class="col s6"><ul style="text-align: justify; font-size: 120%">Una gráfica o también conocido como grafo G es un par ordenado G = (V (G), A(G)), donde V (G) es un conjunto finito y no vacío, a cuyos elementos llamamos los vértices de la gráfica, y A(G) es un conjunto de pares no ordenados de vértices, cuyos elementos son las aristas de la gráfica. Por comodidad, una arista {u, v} será denotada por uv. Una gráfica se puede representar geométricamente mediante un dibujo, en el cual los vértices son puntos y las aristas son líneas que conectan a los puntos.</ul>
+          <ul style="text-align: left; font-size: 120%">Por ejemplo, la gráfica G definida por V = {v1, v2, v3, v4, v5} y E = {v1v2, v1v4, v2v3, v3v4} se puede representar a través del dibujo que aparece en la Figura 1.</ul></div></p>
+          <div class="col s6"><p>Figura 1</p><img src="img/gf1.png" width="350" height="250"></div>
+          <div class="row">
+      <div class="col s12"></div>
+      <div class="col s6"><img src="img/gf2.png"></div>
+      <div class="col s6" style="margin-top: 110px"><h5>También pueden ser llamados "Grafos no dirigidos" <ul>Un vértice que no es incidente en ninguna arista es un
+vértice aislado</ul></h5></div>
+    </div>
+
+
+
+    <div class="row">
+          <div class="col s12"><h3>Multigráficas</h3></div>
+          <div class="col s12"></div>
+          <div class="col s6"><ul style="text-align: justify; font-size: 120%; margin-top:110px">La definición de gráfica se puede ampliar si se permiten lazos, es decir, aristas de la forma uu, y aristas paralelas entre pares de vértices. A una gráfica con lazos y aristas paralelas se le conoce como multigráfica.</ul>
+            <ul style="text-align: justify; font-size: 120%">El número de vértices de una gráfica es conocido como el orden y el número de aristas es el tamaño. Si una arista e = uv relaciona los vértices u y v, decimos que, u y v son adyacentes, en caso contrario decimos que son independientes. También se dice que u y v son incidentes con la arista e.</ul>
+          <ul style="text-align: left; font-size: 120%"></ul></div></p>
+          <div class="col s6"><img src="img/gf3.png" width="350" height="250"><p>En esta figura se muestra una multigráfica con un lazo y dos aristas paralelas</p></div>
+
+
+          <div class="row">
+          <div class="col s12"><h3>Grafos dirigidos</h3></div>
+          <div class="col s6"><img style="margin-top: 100px" src="img/gf4.png"><p>Grafo dirigido</p>
+          <ul style="text-align: left; font-size: 120%"></ul></div></p>
+          <div class="col s6"><p style="text-align: justify; font-size: 120%; margin-top:150px">Por otro lado, un grafo dirigido G= (V, A) es un grafo cuyas aristas a= (v1, v2) ∈ A representan una conexión entre los dos vértices v1 y v2 en la dirección desde v 1 a v 2, usualmente denotada por una flecha que va desde v 1 hacia v 2. Luego, en un grafo dirigido, una arista nos entrega más información que una arista en un grafo no-dirigido.</p></div>
+
+
+
+          <div class="row">
+          <div class="col s12"><h3>Grafos Isomorfos</h3></div>
+          <div class="col s12"></div>
+          <div class="col s6"><p style="text-align: justify; font-size: 120%; margin-top:150px">Dos grafos G =(V, E) y G =(V ,E) son isomorfos si existen biyecciones, tanto entre sus vértices, como entre sus aristas, es decir, existen dos funciones biyectivas ϕ V : V → V y ϕ E : E → E , que satisfacen que e =(u, v) ∈ E si y sólo si ϕ E ( e )=( ϕ V ( u ) ,ϕ V ( v )) ∈ E . Por ejemplo, los grafos de la Figura 2.4 son isomorfos, pero distintos.</p>
+          <ul style="text-align: left; font-size: 120%"></ul></div></p>
+          <div class="col s6"><img width="480" height="250" src="img/gf5.png"><p>Figura 2.4</p></div>
+
+        </div>
+
+
+         <div class="row">
+          <div class="col s12"><h3>Grafos Conexos</h3></div>
+          <div class="col s12"></div>
+          <div class="col s6"><img style="margin-top: 100px;" width="350" height="200" src="img/gf6.png"><p>Figura 1.9</p>
+          <ul style="text-align: left; font-size: 120%"></ul></div></p>
+          <div class="col s6"><p style="text-align: justify; font-size: 120%; margin-top:150px">Un grafo es conexo si existe un camino entre cada par de vértices distintos del grafo. Por ejemplo, en la Figura 1.9, el grafo de la izquierda es conexo mientras que el grafo de la derecha no lo es, pues no existe un camino que conecte a los vértices 1, 2 o 3 con los vértices 4 o 5.</p></div>
+
+        </div>
+
+
+
+        <div class="row">
+          <div class="col s12"><h3>Subgráficas</h3></div>
+          <div class="col s12"></div>
+          <div class="col s6"><p style="text-align: justify; font-size: 120%; margin-top:150px">Un concepto muy importante en Teoría de las Gráficas es el de subgráfica. Una gráfica G´ Es subgráfica de G si el conjunto de los vértices de G´ es un subconjunto de los vértices de G y el conjunto de las aristas de G´ es un subconjunto de las aristas de G, es decir, si: <ul>a) V (G´) ⊆ V (G).</ul><ul>b) E(G´) ⊆ E(G).</ul></p>
+          <ul style="text-align: left; font-size: 120%"></ul></div></p>
+          <div class="col s6"><img style="margin-top: 100px" src="img/gf7.png"> <p style="text-align: center">En esta figura se muestra la gráfica inducida G[A], donde A = {a,b,d,e, f }, y la subgráfica H con V (H) = {c,d,e, f , g } y E(H) = {cg ,dg ,de, g f }
+          </p></div>
+
+        </div>
+
+
+
+         <div class="row">
+      <div class="col s12"><h3>Representación a través de una matriz</h3></div>
+      <div class="col s6"><img style="margin-top: 130px" src="img/gf9.png">
+      </div>
+      <div class="col s6"><p style="text-align: justify; font-size: 120%; margin-top:150px">Anteriormente mencionamos que toda gráfica puede representarse geométricamente mediante un dibujo formado por puntos y líneas. Sin embargo, en ocasiones es conveniente utilizar otro tipo de representación de la gráfica. Una manera muy útil de hacerlo es mediante una matriz.
+      Dada una gráfica G = (V,E) con V = {v1, v2, ..., vn} se define la matriz de adyacencia A(G) de G como la matriz cuadrada de n×n definida por A(G) = [a ij], donde:</p> <img src="img/tr1.png"></div>
+    </div>
+
+
+
+
+    <div class="row">
+      <div class="col s12"><h3>Diferencia de grados</h3></div>
+      <div class="col s6"><p style="text-align: justify; font-size: 120%; margin-top:150px">Vamos a necesitar construir nuevos grafos a partir de algunos ya existentes, para esto, definiremos las siguientes operaciones básicas sobre grafos que nos permitirán sumar o restar vértices y aristas a un grafo G =( V, E ) dado. Si V ⊂ V es un subconjunto (estricto) de vértices de G , entonces la diferencia entre G y V , denotada por G \ V , corresponde al grafo cuyos vértices son V \ V y sus aristas son las aristas E , menos las que inciden en algún vértice de V , es decir, E ( G \ V )= E ∩ ( V \ V ) × ( V \ V ) .</p>
+      </div>
+      <div class="col s6"><img style="margin-top: 130px" width="450" height="200" src="img/gf10.png"><p>Diferencia entre un grafo y un conjunto de vértices. Izquierda: G , Derecha: G \{ 2 }</p></div>
+    </div>
+
+    <div class="row">
+      <div class="col s12"><h3>Suma de grados</h3></div>
+      <div class="col s6"><p style="text-align: justify; font-size: 120%; margin-top:150px">La suma de G y e, denotada por G + e, como el grafo obtenido al incluir la arista e en G . En la Figura 2.8 se ilustra la suma del grafo y la arista (2,5).</p>
+      </div>
+      <div class="col s6"><img style="margin-top: 130px" width="450" height="200" src="img/gf11.png"><p>Figura 2.8</p> <p>Suma entre un grafo y una arista. Izquierda: G, Derecha: G+(2 , 5)</p></div>
+    </div>
+
+
+
+
+
+<div class="row">
+      <div class="col s12"><h3>Pesos</h3></div>
+      <div class="col s6"><p style="text-align: justify; font-size: 120%; margin-top:150px">Decimos que una gráfica G es ponderada si a cada arista e ∈ E(G) se le asocia un número w(e) al cual se le conoce como el peso de la arista. Si H es una subgráfica de una gráfica ponderada, el peso w(H) de H es la suma de los pesos de las aristas de H.</p>
+      </div>
+      <div class="col s6"><img style="margin-top: 130px" width="300" height="290" src="img/gf16.png"></div>
+    </div>
+
+
+          </div> 
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+ 
+
+  </div>
+  </div>
+
+
+
+
+  <footer class="page-footer lime darken-4">
+    <div style="margin: -50px -50px 0px"><img src="img/borde.png" width="2050" height=60" alt="borde" ></div>
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Universidad Nacional Autónoma de México</h5>
+          <ul class="grey-text text-lighten-4">
+            <li>Alumno: Martínez Pérez Dylan Magdiel</li>
+            <li>Profesor: Ing. Zaldívar Zamorategui Orlando</li>
+            <li>Materia: Estructuras discretas</li>
+            <li>Grupo: 06</li>
+          
+        </ul>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <div><a href="https://www.ingenieria.unam.mx/"><img src="img/logo.png" style="margin: 15px 0px" width="120" height="150" alt="FI"></a></div>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <div><a href="https://www.unam.mx/"><img src="img/logo2.png" style="margin: 15px 0px" width="120" height="150" alt="UNAM" ></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+     
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+            <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems);
+  });</script>
+
+
+
+
+
+
+  </body>
+</html>
